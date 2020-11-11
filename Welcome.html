@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> EXAFSPAK </title>
+		<style>
+			<!--Background Color-->
+			<bgcolor: white>
+		</style>
+		<!--Header Icon-->
+		<link rel="shortcut icon" type="image/x-icon" href="Tab-Icon.png"/>
+
+		<!--Style Sheet-->
+		<link rel="stylesheet" type="text/css" href="UofS-stylesheet.css"/>
+	
+	</head>
+	
+	<!--Margin Size-->
+	<style type="text.css">
+		.tab{margin-left: 40px;}
+		.tab{margin-right: 40px;}
+	</style>
+	
+	<!--Remove Hyperlink Underlines-->
+	<style>
+		A {text-decoration: none;}
+		body{
+			background-image: url('Winter(1).png');
+			background-attachment: fixed;
+			background-size: 100% 100%;
+		}
+	</style>
+	
+	<!--Content-->
+	<body>
+		<!--Dropdown Code-->
+		<script type="text/javascript" language="JavaScript">
+			function HideContent(d) {
+				document.getElementById(d).style.display = "none";
+			}
+			function ShowContent(d) {
+				document.getElementById(d).style.display = "block";
+			}
+			function ReverseDisplay(d, a) {
+				if(document.getElementById(d).style.display == "none"){ document.getElementById(d).style.display = "block";}
+				else { document.getElementById(d).style.display = "none"}
+			}
+		</script>
+		<!--Margin-->
+		<div class="container">
+			<!--Title-->
+			
+			<hr>
+			<!--Text-->
+			<p class="tab">
+				EXAFSPAK is an operating system independent package for analysis of X-ray absorption spectroscopic data.
+			<p>
+				<b>Downloads</b>
+			<p>
+				Please select your operating system to view the specific download details.
+			<p>
+				<ul id="drop">
+					<!--Windows Dropdown Button-->
+					<li><a href="#" onclick="javascript:ShowContent('Windows');javascript:HideContent('Open-VMS');javascript:HideContent('Linux');
+											javascript:HideContent('Tru64-Unix');javascript:HideContent('Macintosh');">Microsoft Windows</a></li>
+					<!--VMS Dropdown Button-->
+					<li><a href="#" onclick="javascript:ShowContent('Open-VMS');javascript:HideContent('Windows');javascript:HideContent('Linux');
+											javascript:HideContent('Tru64-Unix');javascript:HideContent('Macintosh');">Open VMS</a></li>
+					<!--Linux Dropdown Button-->
+					<li><a href="#" onclick="javascript:ShowContent('Linux');javascript:HideContent('Windows');javascript:HideContent('Open-VMS');
+											javascript:HideContent('Tru64-Unix');javascript:HideContent('Macintosh');">Linux</a></li>
+					<!--Unix Dropdown Button-->
+					<li><a href="#" onclick="javascript:ShowContent('Tru64-Unix');javascript:HideContent('Windows');javascript:HideContent('Open-VMS');
+											javascript:HideContent('Linux');javascript:HideContent('Macintosh');">Tru64 Unix</a></li>
+					<!--Macintosh Dropdown Button-->
+					<li><a href="#" onclick="javascript:ShowContent('Macintosh');javascript:HideContent('Windows');javascript:HideContent('Open-VMS');
+											javascript:HideContent('Linux');javascript:HideContent('Tru64-Unix');">Macintosh OSX (Intel)*</a></li>
+				</ul>
+			</p>
+				<!--Windows Dropdown-->
+				<div id="Windows" style="display:none">
+					<p class="tab">
+						<a style="color:red"><u><i><b>Please Note</b></i></u></a> - This release of <i>EXAFSPAK</i> for Microsoft Windows requires an
+						X Windows server package that must be installed before <i>EXAFSPAK</i>.
+					<p>
+						We have evaluated the following packages and verified that they work with <i>EXAFSPAK</i> but we do not endorse any particular
+						package.
+					<p>
+						<ul>
+							<li><a href="http://x.cygwin.com/" style="color:#228B22">Cygwin</a> provides a UNIX-like environment for Windows (available at no cost).</li>
+							<li><a href="http://www.hummingbird.com/products/nc/exceed/index.html" style="color:#228B22">Hummingbird</a> Exceed X Windows server - a full featured commercial package.</li>
+							<li><a href="http://www.starnet.com/" style="color:#228B22">X-Win32</a> X Windows Server - a full featured alternative to Hummingbird.</li>
+						</ul>
+					<hr>
+					<p>
+						<i><a style="color:#228B22">Installation Procedure</a>:</i>
+					<p>
+						<ol>
+							<li>Download the self-extracting .exe file by clicking <a href="http://www-ssrl.slac.stanford.edu/~george/exafspak_ins/exafspak.zip" style="color:#228B22">here</a>.</li>
+							<li>Extract this file either to a location on your hard disk, an installation CD can now be created if desired. If a CD
+							is used then this will auto-run upon insertion into your CD drive, and EXAFSPAK will be automatically installed.
+							Otherwise double-click on setup.exe and the installation will begin.</li>
+						</ol>
+					<p>
+						If you are using Cygwin or X-Win32 (or any other package apart from Exceed) then you are now ready to run <i>EXAFSPAK</i>. Please
+						refer to the manual for specific instructions on how to proceed.
+					<p>
+						If you are using the Hummingbird Exceed package then the following changes must be made to the system for <i>EXAFSPAK</i> to run
+						optimally.
+					<p>
+						<ol>
+							<li>Launch a command window and go to the EXAFSPAK installation directory by typing "<a style="font-family:Courier New">cd %exafs%</a>"</li>
+							<li>Please make absolutely sure you are in the correct location before proceeding</li>
+							<li>Delete all the .dll files by typing "<a style="font-family:Courier New">del *.dll</a>"</li>
+							<li>Go to the system control panel, select the "advanced" tab, and click on "Environment Variables"</li>
+							<li>Delete the system variable called "display"</li>
+							<li>Edit the system variable called "path" and append the location of the Exceed installation at the end e.g. add
+							<br/>"<a style="font-family:Courier New">;C:\Program Files\Hummingbird\Connectivity\7.00\Exceed</a>"
+								<ul><li>Note that this location depends upon the version of Exceed that is installed.</li></ul></li>
+						</ol>
+					<p>
+						You have now completed your Windows <i>EXAFSPAK</i> installation. 
+					<p>
+						Use the Command Prompt window to launch the programs in exactly the same way as for the UNIX and Open VMS versions.
+					<hr>
+					<p>
+						<i><a style="color:#228B22">Notes</a>:</i>
+					<p>
+						<ol>
+							<li>If you have the Exceed services Telnetd and Xstartd enabled, then you will be able to use <i>EXAFSPAK</i> on your
+							remotely using telnet to log in to your PC.</li>
+							<li>EXAFSPAK default colors, fonts etc. can be controlled by changing the intitial settings given in the gplot.rc file
+							in the home directory. An example gplot.rc file can be obtained by clicking <a href="gplot.rc" style="color:#228B22">here</a>.</li>
+						</ol>
+					</p>
+					
+				</div>
+				<!--Open VMS Dropdown-->
+				<div id="Open-VMS" style="display:none">
+					<p class="tab">
+						VMS
+					</p>
+				</div>
+				<!--Linux Dropdown-->
+				<div id="Linux" style="display:none">
+					<p class="tab">
+						Linux
+					</p>
+				</div>
+				<!--Tru64 Unix Dropdown-->
+				<div id="Tru64-Unix" style="display:none">
+					<p class="tab">
+						Tru64-Unix
+					</p>
+				</div>
+				<!--Macintosh Dropdown-->
+				<div id="Macintosh" style="display:none">
+					<p class="tab">
+						Macintosh
+					</p>
+				</div>
+			<hr>
+			<hr>
+			<p class="tab">
+				Regarding *Macintosh OSX (powerpc), sgi IRIX, and Sun Solaris, please email for details.
+			</p>
+		</div>
+	</body>
+	
+</html>

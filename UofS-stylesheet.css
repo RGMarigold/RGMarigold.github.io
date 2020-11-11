@@ -1,0 +1,111 @@
+/*Homepage Navigation*//*www.cssnewbie.com/super-simple-horizontal-navigation-bar/#WMATvfkrLB0*/
+#nav {
+	width: 100%;
+	float: left;
+	margin: 0 0 3em 0;
+	padding: 0;
+	list-style: none;
+	background-color: #228B22;
+	font-family: Sans-serif;
+}
+#nav li {
+	float: left;
+}
+#nav li a {
+	display: block;
+	padding: 1px 14.46px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #E6FFE6;
+}
+#nav li a:hover {
+	color: #FFFFFF;
+	background-color: #64C864;
+}
+
+/*General Navigation*//*same as above, but modified*/
+#gnav {
+	width: 26%;
+	float: left;
+	Margin: 0 0 1em 0;
+	padding: 0;
+	list-style: none;
+	background-color: #228B22;
+	font-family: Times New Roman;
+}
+#gnav li a{
+	display: block;
+	padding: 8px 21.3px;
+	text-decoration: none;
+	/*font-weight: bold;*/
+	color: #E6FFE6;
+}
+#gnav li a:hover {
+	color: #ffffff;
+	background-color: #64C864;
+}
+
+/*Reference Navigation*//*Old dropdown*/
+.rnav {
+	padding: 8px 14.45px;
+	color: #E6FFE6;
+	background-color: #228B22;
+	font-family: Sans-serif;
+}
+.rnav:hover {
+	color: #FFFFFF;
+	background-color: #64C864;
+}
+
+/*Font*/
+p {
+	font-family: Sans-Serif;
+	line-height: 1.5;
+}
+li {
+	font-family: Sans-Serif;
+	line-height: 2.0;
+}
+
+/*Margins*/
+.container {
+	width:900px;
+	margin:0 auto 0 auto;
+	padding:5px;
+	background-color: white;
+}
+
+/*Title*/
+.title {
+	font-size: 150%;
+}
+
+/*DropDown Content*//*modified navigation bar*/
+#drop{
+	width: 100%;
+	float: left;
+	margin: 0 0 1em 0;
+	padding: 0;
+	list-style: none;
+	background-color: #228B22;
+	font-family: Sans-Serif;
+}
+#drop li{
+	float: left;
+}
+#drop li a{
+	display: block;
+	padding: 0px 40.86px;
+	text-decoration: none;
+	color: #E6FFE6;
+}
+#drop li a:hover{
+	color: #FFFFFF;
+	background-color: #64C864;
+}
+
+/*Topic Separation Customization*/
+hr{
+	background-color: #228B22;
+	border: 1px solid #228B22;
+}
