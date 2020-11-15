@@ -10,11 +10,13 @@
 }
 #nav li {
 	float: left;
+	width: 18.666%;
 }
 #nav li a {
 	display: block;
-	padding: 1px 14.46px;
+	padding: 1px;
 	text-decoration: none;
+	text-align: center;
 	font-weight: bold;
 	color: #E6FFE6;
 }
@@ -50,7 +52,7 @@
 	padding: 8px 14.45px;
 	color: #E6FFE6;
 	background-color: #228B22;
-	font-family: Arial;
+	font-family: Sans-serif;
 }
 .rnav:hover {
 	color: #FFFFFF;
@@ -59,7 +61,7 @@
 
 /*Font*/
 p {
-	font-family: Arial;
+	font-family: Sans-Serif;
 	line-height: 1.5;
 }
 li {
@@ -88,7 +90,7 @@ li {
 	padding: 0;
 	list-style: none;
 	background-color: #228B22;
-	font-family: Arial;
+	font-family: Sans-Serif;
 }
 #drop li{
 	float: left;
