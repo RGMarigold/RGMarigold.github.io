@@ -94,11 +94,13 @@ li {
 }
 #drop li{
 	float: left;
+	width: 33.333%;
 }
 #drop li a{
 	display: block;
-	padding: 0px 40.86px;
+	padding: 0px;
 	text-decoration: none;
+	text-align: center;
 	color: #E6FFE6;
 }
 #drop li a:hover{
