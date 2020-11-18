@@ -3,7 +3,7 @@
 	<head>
 		<title> EXAFSPAK </title>
 		<style>
-			<!--Background Color-->
+			<!--Background Colour-->
 			<bgcolor: white>
 		</style>
 		<!--Header Icon-->
@@ -61,17 +61,19 @@
 				<ul id="drop">
 					<!--Windows Dropdown Button-->
 					<li><a href="#" onclick="javascript:ShowContent('Windows');javascript:HideContent('Linux');
-											javascript:HideContent('Macintosh');">Microsoft Windows</a></li>
+											javascript:HideContent('Macintosh');"><img src="Windows.png"/>Microsoft Windows</a></li>
 					<!--Linux Dropdown Button-->
 					<li><a href="#" onclick="javascript:ShowContent('Linux');javascript:HideContent('Windows');
-											javascript:HideContent('Macintosh');">Linux</a></li>
+											javascript:HideContent('Macintosh');"><img src="Linux.png"/>Linux</a></li>
 					<!--Macintosh Dropdown Button-->
 					<li><a href="#" onclick="javascript:ShowContent('Macintosh');javascript:HideContent('Windows');
-											javascript:HideContent('Linux');">Macintosh</a></li>
+											javascript:HideContent('Linux');"><img src="Mac.png">Macintosh</a></li>
 				</ul>
 			</p>
 				<!--Windows Dropdown-->
 				<div id="Windows" style="display:none">
+					<p>
+						<a class="rnav">Intel Windows<img src="download.png"/></a>
 					<p class="tab">
 						<a style="color:red"><u><i><b>Please Note</b></i></u></a> - This release of <i>EXAFSPAK</i> for Microsoft Windows requires an
 						X Windows server package that must be installed before <i>EXAFSPAK</i>.
@@ -131,13 +133,16 @@
 				<!--Linux Dropdown-->
 				<div id="Linux" style="display:none">
 					<p class="tab">
-						Linux
+						<a class="rnav">Intel Linux<img src="download.png"/></a>
+						<a class="rnav">ARM Linux 32 bit<img src="download.png"/></a>
+						<a class="rnav">ARM Linux 64 bit<img src="download.png"/></a>
 					</p>
 				</div>
 				<!--Macintosh Dropdown-->
 				<div id="Macintosh" style="display:none">
 					<p class="tab">
-						Macintosh
+						<a class="rnav">Intel Macintosh<img src="download.png"/></a>
+						<a class="rnav">M1 Macintosh<img src="download.png"/></a>
 					</p>
 				</div>
 			<hr>
