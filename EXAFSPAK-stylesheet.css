@@ -1,0 +1,78 @@
+body {
+	background-color: #808080;
+}
+
+::selection {
+	background-color: lightblue;
+	color: slategrey;
+}
+
+h4 {
+	color: white;
+	font-family: Sans-serif;
+	font-weight: normal;
+	margin: 20px;
+}
+
+.container { /*The square that holds the main content in the middle of the page*/
+	margin: -10px;
+	padding: 10px;
+	background-color: #404040;
+}
+
+.paragraph-image { /*The overall container for paragraphs that sit next to images*/
+	margin-right: 10px;
+}
+
+.image-group { /*The individual paragraph/image squares within the paragraph-image group*/
+	flex: 50%;
+	padding-right: 20px;
+}
+
+.image { /*Image formatting*/
+	width: 100%;
+	border: 3px solid white;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+@media screen and (max-width: 750px){
+	.container {
+		background-color: red;
+		padding: 0;
+		padding-top: 10px;
+	}
+	.paragraph-image {
+		display: normal;
+		margin-right: -10px;
+	}
+	.image-group {
+		padding-right: 0;
+	}
+	.image {
+		border: 0;
+		border-radius: 0;
+		box-shadow: none;
+	}
+}
+@media screen and (max-width: 1280px) and (min-width: 751px){
+	.container {
+		background-color: blue;
+	}
+	.paragraph-image {
+		display: flex;
+	}
+}
+@media screen and (min-width: 1281px){
+	.container {
+		width: 1250px;
+		margin: auto;
+		border-radius: 16px;
+		box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+		margin-top: 40px;
+	}
+	.paragraph-image {
+		display: flex;
+	}
+}
