@@ -1,5 +1,6 @@
 body {
 	background-color: #808080;
+	overflow-x: hidden;
 }
 
 ::selection {
@@ -35,7 +36,7 @@ h4 {
 }
 
 
-@media screen and (min-width: 981px){
+@media screen and (min-width: 768px){
 	.container {
 		background-color: #404040;
 		padding: 10px;
